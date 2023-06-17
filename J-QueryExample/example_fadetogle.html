@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1" style="width: 150px; height: 200px; background-color: green; display: none;"></div>
+    <div class="div2" style="width: 150px; height: 200px; background-color: yellow;display: none;"></div>
+    <div class="div3" style="width: 150px; height: 200px; background-color: red; display: none;"></div><br><br>
+    <button id="btn">click mee</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $(".div1").fadeToggle(500)
+                $(".div2").fadeToggle(100)
+                $(".div3").fadeToggle(50)
+            })
+        })
+    </script>
+</body>
+</html>

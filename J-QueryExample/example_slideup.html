@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #div1{
+        background-color: dimgray;
+        text-align: center;
+        color: aliceblue;
+        font-size: medium;
+        height: 50px;
+        margin-top: -20px;
+       }
+       #div2{
+        background-color: black;
+        text-align: center;
+        color: aliceblue;
+        height: 100px;
+       }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1>Click for Slide Up</h1>
+    </div>
+    <div id="div2">
+        Detail Datas for slide UP
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#div1").click(function(){
+                $("#div2").slideUp()
+            })
+        })
+    </script>
+
+</body>
+</html>
